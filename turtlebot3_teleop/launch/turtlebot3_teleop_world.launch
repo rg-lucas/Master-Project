@@ -1,0 +1,11 @@
+
+<launch>
+  <!-- Set the Gazebo world file -->
+  <arg name="world_name" default="$(find pkg1)/worlds/joy.world"/>
+
+  <!-- Launch Gazebo with the specified world file -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/>
+  </include>
+</launch>
+
